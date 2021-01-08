@@ -270,9 +270,18 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      /*   background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px; }
+      height: 150px; */
+    
+      margin: auto;
+      width: 200px;
+      height: 300px;
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(http://i.stack.imgur.com/S1ZCs.jpg) no-repeat;
+    }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -289,3 +298,114 @@ main {
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
+
+        /* aqui */
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+    
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+    /* skills */
+
+#skills-container ul { list-style: none; }
+#skills-container .buttons { margin-bottom: 20px; }
+
+#skills-container .grid li { float: left; width: 20%;  padding: 20px; }
+
+li i {
+font-size: 5rem;
+}
+
+skills-label {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+  skills-containerv1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20%;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.wrapper {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+  transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+  transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+  opacity: 0;
+  transition-property: opacity,transform;
+}
