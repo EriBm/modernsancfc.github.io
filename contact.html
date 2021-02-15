@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/main.css">
+<link rel="icon" href="img/logo-fc-pg-transparent.png" type="image/png">
   <title>Contact Me</title>
 </head>
 
@@ -25,7 +25,7 @@
         <div class="portrait"></div>
       </div>
       <ul class="menu-nav">
-        <li class="nav-item">
+        <li class="nav-item current">
           <a href="index.html" class="nav-link">
             Home
           </a>
@@ -36,11 +36,26 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="experience.html" class="nav-link">
+            My Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="skills.html" class="nav-link">
+            My Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="volunteering.html" class="nav-link">
+            Volunteering
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="work.html" class="nav-link">
             My Work
           </a>
         </li>
-        <li class="nav-item current">
+        <li class="nav-item">
           <a href="contact.html" class="nav-link">
             How To Reach Me
           </a>
@@ -57,24 +72,78 @@
     <h2 class="sm-heading">
       This is how you can reach me...
     </h2>
-    <div class="boxes">
-      <div>
-        <span class="text-secondary">Email: </span> johndoe@test.com
-      </div>
-      <div>
-        <span class="text-secondary">Phone: </span> (555) 555-5555
-      </div>
-      <div>
-        <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
+    <div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
+      <div class="container-contact100">
+        <div class="wrap-contact100">
+          <div class="contact100-pic js-tilt" data-tilt>
+            <img src="images/img-01.png" alt="IMG">
+          </div>
+  
+          <form class="contact100-form validate-form">
+            <span class="contact100-form-title">
+              Get in touch
+            </span>
+  
+            <div class="wrap-input100 validate-input" data-validate = "Name is required">
+              <input class="input100" type="text" name="name" placeholder="Name">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+            </div>
+  
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+              <input class="input100" type="text" name="email" placeholder="Email">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+  
+            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+              <textarea class="input100" name="message" placeholder="Message"></textarea>
+              <span class="focus-input100"></span>
+            </div>
+  
+            <div class="container-contact100-form-btn">
+              <button class="contact100-form-btn">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+  
+  
+  
+  
   </main>
 
   <footer id="main-footer">
-    Copyright &copy; 2018
+    Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart"
+    aria-hidden="true"></i> by <a href="https://twitter.com/sancfc" target="_blank">@sancfc</a>
   </footer>
 
   <script src="js/main.js"></script>
+  
+  
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script >
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script>
+  <!--===============================================================================================-->
+  
 </body>
 
 </html>
